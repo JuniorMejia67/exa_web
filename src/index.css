@@ -1,15 +1,15 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f8f9fa;
-  color: #333;
+  background: #f7f7f5;
+  color: #7f7a7a;
 }
 
 /* Navbar */
 .navbar {
   background: #000000;
   padding: 1rem 0;
-  box-shadow: 0 1px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 15px rgba(24, 23, 23, 0.1);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -91,40 +91,29 @@ h2 {
   color: #0077cc;
 }
 
-/* Formulario */
-form {
-  display: grid;
-  gap: 1rem;
-}
-input, textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-button {
-  background: #0077cc;
-  color: #fff;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 6px;
-  cursor: pointer;
-}
-button:hover {
-  background: #005fa3;
-}
+/* Contactos*/
 
 /* Footer */
-footer {
+.footer {
+  background-color: #f0f0f0;
   text-align: center;
-  padding: 1rem 5rem;
-  background: #fffefe;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
 }
-.redes a {
-  margin: 0 0.5rem;
-  color: #444;
-  font-size: 1.4rem;
+
+.social-icons {
+  margin-bottom: 1rem;
 }
-.redes a:hover {
-  color: #000000de;
+
+.social-icons a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 24px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077cc;
 }

@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  
 
   return (
     <>
@@ -36,7 +35,6 @@ function App() {
     <h2>🛠️ Herramientas y Tecnologías</h2>
     <div class="tags">
       <span>HTML / CSS / JS</span>
-      <span>Tailwind CSS</span>
       <span>React / Vue</span>
       <span>Python / Flask</span>
       <span>Git / GitHub</span>
@@ -67,24 +65,24 @@ function App() {
       </div>
     </div>
   </section>
-  <section id="contacto" class="seccion fondo-claro">
-    <h2>📫 Contacto</h2>
-    <form onsubmit="return validarFormulario()">
-      <input type="text" id="nombre" placeholder="Tu nombre" required></input>
-      <input type="email" id="correo" placeholder="Tu correo" required></input>
-      <textarea id="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
-      <button type="submit">Enviar mensaje</button>
-    </form>
-  </section>
-
-  <footer>
-    <div class="redes">
-      <a href="#" title="GitHub"><i data-lucide="github"></i></a>
-      <a href="#" title="LinkedIn"><i data-lucide="linkedin"></i></a>
-      <a href="#" title="Email"><i data-lucide="mail"></i></a>
-    </div>
-    <p>© 2025 Javi Junior Mejia Camacho. Todos los derechos reservados.</p>
-  </footer>
+  <footer class="footer">
+  <div class="social-icons">
+    <a href="https://github.com/JuniorMejia67" target="_blank" title="GitHub">
+      <i data-lucide="github"></i>
+    </a>
+    <a href="mailto:tuemail@ejemplo.com" title="Email">
+      <i data-lucide="mail"></i>
+    </a>
+    <a href="https://facebook.com/tuusuario" target="_blank" title="Facebook">
+      <i data-lucide="facebook"></i>
+    </a>
+  </div>
+  <p>© 2025 Tu Nombre. Todos los derechos reservados.</p>
+</footer>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
 </body>
     </>
   )
